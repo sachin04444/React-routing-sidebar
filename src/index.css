@@ -1,13 +1,76 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+:root{
+  --nav-bg:rgb(6, 45, 82);
+  --nav-link-bg:rgb(241, 235, 235);
+  --nav-link-font:white;
+  --main-dev-bg:rgb(21, 121, 187);
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.icon{
+  font-size: 40px;
+  text-align: center;
+  padding-top:20px ;
+  color: var(--nav-link-font);
+}
+.hrhu{
+  margin: 3px 10px;
+}
+.main {
+  background-color: var(--nav-bg);
+  width: 15%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+}
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+ margin-top: 30px;
+}
+
+a {
+  color: aliceblue;
+  background-color: var(--nav-link-bg);
+  text-decoration: none;
+  list-style: none;
+  padding: 10px;
+  margin: 10px;
+  width: 100%;
+  text-align: center;
+  border-radius: 0 20% 0% 0 ;
+  color: var(--nav-bg);
+  
+}
+
+a:hover{
+  background-color:var(--nav-bg);
+  color: var(--nav-link-bg);
+}
+
+
+/* main container  */
+.Mcontiner{
+  background-color: var(--main-dev-bg);
+  height: 100vh;
+
+}
+.fuctio-m{
+  display: grid;
+  grid-template-columns: 15%  85%;
+}
+.centere-div{
+  display: flex;
+  justify-content: center;
+ align-items: center;
+ height: 100vh;
+  font-size: 1rem;
 }
